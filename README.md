@@ -10,20 +10,20 @@
 
 ---
 
-## ✨ Features
+## Features
 
 | Feature | Details |
 |---|---|
-| 📝 Text Classification | Passive Aggressive Classifier on TF-IDF vectors |
-| 📊 Confidence Score | Sigmoid-transformed decision function → probability estimate |
-| 🔬 LIME Explainability | Word-level influence scores with color-coded highlighting |
-| ⚡ Zero-download Setup | Built-in 50-sample balanced dataset — works instantly |
-| 💾 Persistent Model | Trained once, saved to disk — no retraining on every run |
-| 🎨 Editorial UI | Dark newsroom aesthetic with Streamlit |
+| Text Classification | Passive Aggressive Classifier on TF-IDF vectors |
+|  Confidence Score | Sigmoid-transformed decision function → probability estimate |
+|  LIME Explainability | Word-level influence scores with color-coded highlighting |
+|  Zero-download Setup | Built-in 50-sample balanced dataset — works instantly |
+|  Persistent Model | Trained once, saved to disk — no retraining on every run |
+|  Editorial UI | Dark newsroom aesthetic with Streamlit |
 
 ---
 
-## 🗂 Project Structure
+## Project Structure
 
 ```
 fake-news-detector/
@@ -41,7 +41,7 @@ fake-news-detector/
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Clone & enter the project
 ```bash
@@ -78,7 +78,7 @@ Open `http://localhost:8501` in your browser. 🎉
 
 ---
 
-## 📂 Using Your Own Dataset
+##  Using Your Own Dataset
 
 ### Option A — CSV file
 Your CSV must have at least two columns:
@@ -110,7 +110,7 @@ python model.py --data data/liar/
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 ### 1. Data Preprocessing (`data_loader.py`)
 Raw text is cleaned: lowercased, HTML stripped, URLs removed, non-alpha characters filtered.
@@ -146,7 +146,7 @@ Words with **negative weight** → push toward REAL
 
 ---
 
-## 📸 UI Overview
+##  UI Overview
 
 The app uses an editorial **dark newsroom** aesthetic:
 - **Masthead** — newspaper-style header with serif typography
@@ -154,10 +154,11 @@ The app uses an editorial **dark newsroom** aesthetic:
 - **Highlighted Article** — inline word highlighting with opacity scaling
 - **LIME Word Bars** — ranked influence bars for top positive/negative words
 - **Raw Data Expander** — full LIME feature weights table
+- ![Upload UI](assets/newsdetectorhome.png)
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 | Layer | Library |
 |---|---|
@@ -170,7 +171,7 @@ The app uses an editorial **dark newsroom** aesthetic:
 
 ---
 
-## ⚠️ Limitations
+##  Limitations
 
 - The built-in sample dataset has 50 examples — suitable for demonstration, not production.
 - For production use, train on a large labeled dataset (e.g., LIAR, FakeNewsNet, Kaggle).
@@ -179,7 +180,7 @@ The app uses an editorial **dark newsroom** aesthetic:
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/better-dataset`
@@ -188,6 +189,6 @@ The app uses an editorial **dark newsroom** aesthetic:
 
 ---
 
-## 📄 License
+##  License
 
 MIT © 2024 — Free to use for research, education, and personal projects.

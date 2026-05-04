@@ -1,4 +1,4 @@
-# 🔍 Fake News Detection System
+# Fake News Detection System
 
 > An interpretable machine learning system that classifies news articles as **Real** or **Fake** — and explains *why* using LIME (Local Interpretable Model-agnostic Explanations). Built with scikit-learn, spaCy, and Streamlit.
 
